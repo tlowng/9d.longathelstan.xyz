@@ -836,42 +836,6 @@ const Members = (props) => {
               </div>
             </a>
             <a
-              href="https://www.facebook.com/profile.php?id=100085023645067"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="members-link32"
-            >
-              <div className="members-container64">
-                <div className="members-container65">
-                  <span className="members-text127">
-                    {props.text515 ?? (
-                      <Fragment>
-                        <span className="members-text217">
-                          <span>Bảo Thi</span>
-                          <br></br>
-                        </span>
-                      </Fragment>
-                    )}
-                  </span>
-                </div>
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  className="members-icon54"
-                >
-                  <path
-                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </div>
-            </a>
-            <a
               href="https://bio.link/nghalinh15210"
               target="_blank"
               rel="noreferrer noopener"
@@ -895,6 +859,42 @@ const Members = (props) => {
                   height="22"
                   viewBox="0 0 24 24"
                   className="members-icon56"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100085023645067"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="members-link32"
+            >
+              <div className="members-container64">
+                <div className="members-container65">
+                  <span className="members-text127">
+                    {props.text515 ?? (
+                      <Fragment>
+                        <span className="members-text217">
+                          <span>Bảo Thi</span>
+                          <br></br>
+                        </span>
+                      </Fragment>
+                    )}
+                  </span>
+                </div>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  className="members-icon54"
                 >
                   <path
                     d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"
