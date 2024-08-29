@@ -36,7 +36,7 @@ const Home = (props) => {
         <div className="home-container14">
           <div className="home-container15">
             <span className="home-text104">
-              Chào mừng đến với website của 9D :)
+              Chào mừng đến với website của class 9D :)
             </span>
           </div>
           <div className="home-container16">

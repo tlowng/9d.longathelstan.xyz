@@ -1,7 +1,6 @@
 .members-container10 {
   width: auto;
   display: flex;
-  overflow: scroll;
   position: relative;
   align-items: stretch;
   flex-direction: row;
