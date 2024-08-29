@@ -1,17 +1,57 @@
-import React, { Fragment } from 'react'
-
+import React, { Fragment, useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 
+import Typical from 'react-typical'
+
 import Members from '../components/members'
+import audioFile from './you.mp3';
 import './home.css'
 
 const Home = (props) => {
+  const [xPos, setXPos] = useState(0);
+  const [yPos, setYPos] = useState(0);
+
+  const handleMouseMove = (event) => {
+    const { clientX, clientY } = event;
+    const { innerWidth, innerHeight } = window;
+  
+    setXPos((clientX / innerWidth) * 100);
+    setYPos((clientY / innerHeight) * 100);
+  };
+
+  const enterPage = () => {
+    const preloadFrame = document.querySelector('.preload');
+    if (preloadFrame) {
+      preloadFrame.classList.add('hidden');
+    }
+    const audioElement = document.querySelector('.myAudio');
+    if (audioElement) {
+      audioElement.play();
+    }
+  };
+
+  useEffect(() => {
+    const preloadFrame = document.querySelector('.preload');
+    if (preloadFrame) {
+      preloadFrame.addEventListener('click', enterPage);
+    }
+
+    return () => {
+      if (preloadFrame) {
+        preloadFrame.removeEventListener('click', enterPage);
+      }
+    };
+  }, []);
   return (
     <div className="home-container10">
       <Helmet>
         <title>9D K21-25 NB</title>
         <meta property="og:title" content="9D K21-25 NB" />
       </Helmet>
+      <div className="preload">
+        <div className="text">click to enter...</div>
+      </div>
+      <audio src={audioFile} className="myAudio" preload="auto" loop></audio>
       <img
         src="/bg.gif"
         alt="image"
@@ -36,7 +76,7 @@ const Home = (props) => {
         <div className="home-container14">
           <div className="home-container15">
             <span className="home-text104">
-              Chào mừng đến với website của class 9D :)
+              Chào mừng đến với website của class 9D :) Develop by tlowng :3
             </span>
           </div>
           <div className="home-container16">
@@ -46,10 +86,14 @@ const Home = (props) => {
                 <br></br>
               </span>
               <span className="home-text108">
-                Vùng đất 9d chứa 18 cô công túa và 16 chàng quàng tử đã tạo
-                thành một sự kết hợp hoàn hảo C₈H₁₁NO₂ (dopamine) +
-                C₁₀H₁₂N₂O (seratonin) + C₄₃H₆₆N₁₃O₁₂S₂ &quot;công thức hóa học
-                của Tình yêu&quot;. 
+              <Typical
+                  steps={[
+                    'Vùng đất 9d chứa 18 cô công túa và 16 chàng quàng tử đã tạo thành một sự kết hợp hoàn hảo C₈H₁₁NO₂ (dopamine) + C₁₀H₁₂N₂O (seratonin) + C₄₃H₆₆N₁₃O₁₂S₂ "công thức hóa học của Tình yêu".',
+                    1000,
+                  ]}
+                  loop={1}
+                  wrapper="p"
+                />
               </span>
             </div>
             <div className="home-container18">
