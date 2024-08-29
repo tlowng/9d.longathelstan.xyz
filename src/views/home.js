@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 
+import FallingFlowers from '../components/fallingflower'
 import Typical from 'react-typical'
 
 import Members from '../components/members'
@@ -48,6 +49,7 @@ const Home = (props) => {
         <title>9D K21-25 NB</title>
         <meta property="og:title" content="9D K21-25 NB" />
       </Helmet>
+      <FallingFlowers></FallingFlowers>
       <div className="preload">
         <div className="text">click to enter...</div>
       </div>
