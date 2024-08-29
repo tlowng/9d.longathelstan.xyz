@@ -63,7 +63,7 @@ const Home = (props) => {
         <div className="home-container12">
           <img
             alt="image"
-            src="/370783562_898408331618728_5291508393228883432_n-1500w.jpg"
+            src="/banner.png"
             loading="lazy"
             className="home-image1"
           />
