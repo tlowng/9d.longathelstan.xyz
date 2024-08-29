@@ -58,54 +58,7 @@ const Members = (props) => {
             <span>
               {props.text3 ?? (
                 <Fragment>
-                  <span className="members-text161">Lớp phó</span>
-                </Fragment>
-              )}
-            </span>
-            <a
-              href="https://www.facebook.com/profile.php?id=100087801795292"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="members-link11"
-            >
-              <div className="members-container17">
-                <div className="members-container18">
-                  <span className="members-text103">
-                    {props.text5 ?? (
-                      <Fragment>
-                        <span className="members-text235">Việt Anh</span>
-                      </Fragment>
-                    )}
-                  </span>
-                </div>
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  className="members-icon12"
-                >
-                  <path
-                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div className="members-container19">
-          <div className="members-container20">
-            <span>
-              {props.text21 ?? (
-                <Fragment>
-                  <span className="members-text208">
-                    <span>Website owner</span>
-                    <br></br>
-                  </span>
+                  <span className="members-text161">Website owner</span>
                 </Fragment>
               )}
             </span>
@@ -180,6 +133,39 @@ const Members = (props) => {
                   height="22"
                   viewBox="0 0 24 24"
                   className="members-icon16"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100087801795292"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="members-link11"
+            >
+              <div className="members-container17">
+                <div className="members-container18">
+                  <span className="members-text103">
+                    {props.text5 ?? (
+                      <Fragment>
+                        <span className="members-text235">Việt Anh</span>
+                      </Fragment>
+                    )}
+                  </span>
+                </div>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  className="members-icon12"
                 >
                   <path
                     d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"

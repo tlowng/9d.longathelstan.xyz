@@ -142,7 +142,7 @@ const Home = (props) => {
                 }
                 text3={
                   <Fragment>
-                    <span className="home-text120">Lớp phó</span>
+                    <span className="home-text120">Website owner</span>
                   </Fragment>
                 }
                 text4={
