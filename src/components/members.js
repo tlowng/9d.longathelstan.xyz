@@ -146,7 +146,7 @@ const Members = (props) => {
               </div>
             </a>
             <a
-              href="https://www.facebook.com/profile.php?id=100087801795292"
+              href="/"
               target="_blank"
               rel="noreferrer noopener"
               className="members-link11"
