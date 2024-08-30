@@ -7,6 +7,7 @@ import Typical from 'react-typical'
 import Members from '../components/members'
 import audioFile from './you.mp3';
 import './home.css'
+import DiscordStatus from '../components/discordstatus'
 
 const Home = (props) => {
   const [xPos, setXPos] = useState(0);
@@ -49,7 +50,7 @@ const Home = (props) => {
         <title>9D K21-25 NB</title>
         <meta property="og:title" content="9D K21-25 NB" />
       </Helmet>
-      <FallingFlowers></FallingFlowers>
+      <FallingFlowers/>
       <div className="preload">
         <div className="text">click to enter...</div>
       </div>
@@ -481,7 +482,12 @@ const Home = (props) => {
           </div>
         </div>
         <div className="home-container26"></div>
+        <div className='avatar-and-status'>
         <img alt="image" src="/logo-200h.png" className="home-image4" />
+        <div className='thinking-indicator'/>
+        <DiscordStatus/>
+        </div>
+        
       </div>
     </div>
   )

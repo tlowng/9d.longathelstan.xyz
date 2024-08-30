@@ -63,16 +63,23 @@
 }
 
 .bg-main {
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
-  bottom: 0px;
-  height: 100%;
-  margin: auto;
-  position: absolute;
+  height: 100vh;
+  position: fixed; 
+  background-attachment: fixed;
+  background-size: cover;
   object-fit: cover;
+  z-index: -1; 
+  background-repeat: no-repeat;
+  /*filter: blur(2px);*/
+  background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: darken;
 }
+
 .home-container11 {
   width: 783px;
   height: 721px;
@@ -568,14 +575,17 @@
   border-radius: var(--dl-radius-radius-round);
   background-color: #7782BE;
 }
-.home-image4 {
+.avatar-and-status {
   top: 123px;
   left: 25px;
-  width: auto;
-  height: 120px;
   margin: auto;
   position: absolute;
   object-fit: cover;
+  display: flex;
+}
+.home-image4 {
+  width: auto;
+  height: 120px;
   border-radius: var(--dl-radius-radius-round);
 }
 @media(max-width: 767px) {
