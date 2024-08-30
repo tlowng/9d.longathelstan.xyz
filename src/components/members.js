@@ -21,7 +21,7 @@ const Members = (props) => {
               )}
             </span>
             <a
-              href="https://www.facebook.com/profile.php?id=100086249464256"
+              href="https://guns.lol/qnyih"
               target="_blank"
               rel="noreferrer noopener"
               className="members-link10"
