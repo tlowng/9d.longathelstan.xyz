@@ -621,6 +621,9 @@
   }
 }
 @media(max-width: 479px) {
+  .home-container10 {
+    overflow: auto;
+  }
   .home-container11 {
     width: 95%;
     height: 880px;
