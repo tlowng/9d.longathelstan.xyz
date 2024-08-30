@@ -41,3 +41,11 @@
     animation: thinkingAnimation 1.5s infinite ease-in-out;
   }
 
+  @media(max-width: 479px) {
+    .custom-status {
+        top: -15px; 
+        max-width: 90px;
+        white-space: inherit;
+    }
+  }
+
