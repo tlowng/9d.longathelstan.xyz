@@ -8,6 +8,7 @@ import Members from '../components/members'
 import audioFile from './you.mp3';
 import './home.css'
 import DiscordStatus from '../components/discordstatus'
+import Firework from '../components/firework'
 
 const Home = (props) => {
   const [xPos, setXPos] = useState(0);
@@ -51,8 +52,9 @@ const Home = (props) => {
         <meta property="og:title" content="9D K21-25 NB" />
       </Helmet>
       <FallingFlowers/>
+      <Firework/>
       <div className="preload">
-        <div className="text">click to enter...</div>
+        <div className="text">ai mời...</div>
       </div>
       <audio src={audioFile} className="myAudio" preload="auto" loop></audio>
       <img
@@ -79,7 +81,33 @@ const Home = (props) => {
         <div className="home-container14">
           <div className="home-container15">
             <span className="home-text104">
-              Chào mừng đến với website của class 9D :) Develop by tlowng :3
+              <Typical
+              loop={Infinity}
+              wrapper="p"
+              steps={[
+                'Chào mừng đến với website của class 9D :)',
+                1000,
+                'Được phát triển bởi Tlowng(longathelstan):3',
+                500,
+                'vào đây để làm gì ????',
+                500,
+                'tìm info của crush ak :)',
+                500,
+                'top những khứa không nên tìm!!!',
+                500,
+                'top 1 Anh Dũng Nguyễn:0',
+                500,
+                'vì khứa này có ny r:)',
+                500,
+                'top 2 Bảo Thi:3',
+                500,
+                'khứa này là ny của khứa hồi nãy:)))))))',
+                2000,
+                '© 9d.longathelstan.xyz, tlowng ft. toidicakhia All rights reserved.',
+                1000
+              ]}
+              ></Typical>
+
             </span>
           </div>
           <div className="home-container16">

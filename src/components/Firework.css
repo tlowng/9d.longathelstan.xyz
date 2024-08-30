@@ -1,0 +1,88 @@
+.firework {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    animation: launch 1s ease-out forwards;
+  }
+  
+  .firework-rocket {
+    width: 30px;
+    height: auto;
+    transform: translate(-50%, 0);
+    animation: flyUp 1s ease-out forwards;
+  }
+  
+  .particles {
+    position: absolute;
+    top: -90vh; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: particleExplode 1s 1s ease-out forwards; 
+  }
+  
+  @keyframes flyUp {
+    0% {
+      transform: translate(-50%, 0);
+    }
+    100% {
+      transform: translate(-50%, -90vh);
+    }
+  }
+  
+  @keyframes launch {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(2);
+    }
+  }
+  
+  @keyframes particleExplode {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(calc(var(--particle-x) * 1vw), calc(var(--particle-y) * 1vh));
+    }
+  }
+  
+  .particle {
+    width: 8px;
+    height: 8px;
+    background-color: #ffbb33; /* Màu sắc của particle */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%; /* Tạo hình tròn */
+  }
+  
+  .particle:nth-child(1) {
+    --particle-x: 1;
+    --particle-y: 1;
+  }
+  
+  .particle:nth-child(2) {
+    --particle-x: -1;
+    --particle-y: 1;
+  }
+  
+  .particle:nth-child(3) {
+    --particle-x: 1;
+    --particle-y: -1;
+  }
+  
+  .particle:nth-child(4) {
+    --particle-x: -1;
+    --particle-y: -1;
+  }
+  
+  /* Add more nth-child rules for other particles */
+  
