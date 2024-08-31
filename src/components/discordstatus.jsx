@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import './discordstatus.css'
 
-const userID = '1275661316761059339'; // Change this to your Discord user ID
+const userID = '1003289653014691911'; // Change this to your Discord user ID
 
 const DiscordStatus = () => {
   const [discordData, setDiscordData] = useState(null);
