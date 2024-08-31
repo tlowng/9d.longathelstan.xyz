@@ -47,7 +47,7 @@ const DiscordStatus = () => {
   }, [discordData]);
 
   if (!discordData) {
-    return <div>Loading...</div>;
+    return <div className='loadingStatus'>Loading...</div>;
   }
 
   const {
@@ -105,6 +105,11 @@ const DiscordStatus = () => {
           <span className="custom-status-text">{customStatus.state || 'Not doing anything!'}</span>
         </div>
       ) : null}
+      {!customStatus.state ? (
+        <div className="custom-status">
+          <span className="custom-status-text">❤️iutlownggkea:3</span>
+        </div>
+      ): null}
     </div>
   );
 };
