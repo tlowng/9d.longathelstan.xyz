@@ -46,6 +46,12 @@ const Home = (props) => {
     };
   }, []);
   return (
+    <div>
+      <img
+        src="/bg.gif"
+        alt="image"
+        className="bg-main"
+      />
     <div className="home-container10">
       <Helmet>
         <title>9D K21-25 NB</title>
@@ -57,11 +63,6 @@ const Home = (props) => {
         <div className="text">ai mời...</div>
       </div>
       <audio src={audioFile} className="myAudio" preload="auto" loop></audio>
-      <img
-        src="/bg.gif"
-        alt="image"
-        className="bg-main"
-      />
       <div className="home-container11">
         <div className="home-container12">
           <img
@@ -517,6 +518,7 @@ const Home = (props) => {
         </div>
         
       </div>
+    </div>
     </div>
   )
 }
