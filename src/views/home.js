@@ -5,10 +5,10 @@ import FallingFlowers from '../components/fallingflower'
 import Typical from 'react-typical'
 
 import Members from '../components/members'
-import audioFile from './you.mp3';
 import './home.css'
 import DiscordStatus from '../components/discordstatus'
 import Firework from '../components/firework'
+import AudioPlayer from '../components/audio'
 
 const Home = (props) => {
   const [xPos, setXPos] = useState(0);
@@ -62,7 +62,7 @@ const Home = (props) => {
       <div className="preload">
         <div className="text">ai mời...</div>
       </div>
-      <audio src={audioFile} className="myAudio" preload="auto" loop></audio>
+      <AudioPlayer />
       <div className="home-container11">
         <div className="home-container12">
           <img
