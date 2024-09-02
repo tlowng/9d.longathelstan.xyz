@@ -12,13 +12,14 @@ const AudioPlayer = () => {
         "8.mp3", 
         "9.mp3", 
         "10.mp3", 
+        "18.mp3",
         "11.mp3", 
         "12.mp3",
         "13.mp3",
         "14.mp3",
         "15.mp3",
         "16.mp3",
-        "17.mp3"
+        "17.mp3",
       ]);
       
   const [randomAudioFile, setAudioFile] = useState('');
