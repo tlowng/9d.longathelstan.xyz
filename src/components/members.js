@@ -63,7 +63,7 @@ const Members = (props) => {
               )}
             </span>
             <a
-              href="https://guns.lol/longathelstan"
+              href="https://longathelstan.xyz/"
               target="_blank"
               rel="noreferrer noopener"
               className="members-link12"
