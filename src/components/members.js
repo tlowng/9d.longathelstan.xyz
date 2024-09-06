@@ -692,7 +692,7 @@ const Members = (props) => {
               </div>
             </a>
             <a
-              href="https://www.facebook.com/profile.php?id=100087361443525"
+              href="https://www.facebook.com/profile.php?id=61565035449778"
               target="_blank"
               rel="noreferrer noopener"
               className="members-link28"
