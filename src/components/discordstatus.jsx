@@ -20,7 +20,7 @@ const DiscordStatus = () => {
   useEffect(() => {
     fetchDiscordStatus();
     const interval = setInterval(fetchDiscordStatus, 6000);
-    return () => clearInterval(interval); // Cleanup on component unmount
+    return () => clearInterval(interval); 
   }, []);
 
   useEffect(() => {

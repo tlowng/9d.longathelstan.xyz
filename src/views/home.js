@@ -9,6 +9,7 @@ import './home.css'
 import DiscordStatus from '../components/discordstatus'
 import Firework from '../components/firework'
 import AudioPlayer from '../components/audio'
+import Background from '../components/background'
 
 const Home = (props) => {
   const [xPos, setXPos] = useState(0);
@@ -47,11 +48,7 @@ const Home = (props) => {
   }, []);
   return (
     <div>
-      <img
-        src="/bg.gif"
-        alt="image"
-        className="bg-main"
-      />
+      <Background/>
     <div className="home-container10">
       <Helmet>
         <title>9D K21-25 NB</title>
