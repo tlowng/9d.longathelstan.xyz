@@ -1,16 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const FallingFlowers = () => {
+  const [flowerImage, setFlowerImage] = useState(null); // Sử dụng useState cho 1 ảnh
+
   useEffect(() => {
-    const pictureSrc = "https://1.bp.blogspot.com/-CXx9jt2JMRk/Vq-Lh5fm88I/AAAAAAAASwo/XivooDn_oSY/s1600/hoamai.png";
-    const pictureWidth = 15;
-    const pictureHeight = 15;
+    const pictureSrcs = [
+      "./flowers/hoadao.png",
+      "./flowers/hoamai.png",
+      "./flowers/bongtuyet.png",
+      "./flowers/bongtuyettrang.png"
+    ];
+
+    const pictureWidth = 17;
+    const pictureHeight = 17;
     const numFlakes = 10;
-    const downSpeed = 0.001; // Smoother, slower fall
+    const downSpeed = 0.001;
     const lrFlakes = 10;
 
     let xcoords = [];
     let ycoords = [];
+
+    const randomIndex = Math.floor(Math.random() * pictureSrcs.length);
+    setFlowerImage(pictureSrcs[randomIndex]);
 
     for (let x = 0; x < numFlakes; x++) {
       xcoords[x] = (x + 1) / (numFlakes + 1);
@@ -58,15 +69,16 @@ const FallingFlowers = () => {
           style={{
             position: "absolute",
             zIndex: 9999,
-            width: "15px",
-            height: "15px",
+            width: "17px",
+            height: "17px",
             pointerEvents: "none",
           }}
         >
           <img
-            src="https://1.bp.blogspot.com/-CXx9jt2JMRk/Vq-Lh5fm88I/AAAAAAAASwo/XivooDn_oSY/s1600/hoamai.png"
-            width={15}
-            height={15}
+            src={flowerImage}
+            width={17}
+            height={17}
+            className="fallingFlower"
             alt="flower"
           />
         </div>
