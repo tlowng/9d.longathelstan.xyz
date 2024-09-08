@@ -64,7 +64,7 @@ const Home = (props) => {
         <div className="home-container12">
           <img
             alt="image"
-            src="/banner.png"
+            src="/banner.webp"
             loading="lazy"
             className="home-image1"
           />
@@ -173,7 +173,7 @@ const Home = (props) => {
                     <div className="home-container23">
                       <img
                         alt="image"
-                        src="/tik-200w.png"
+                        src="/tik-200w.webp"
                         className="home-image3"
                       />
                       <span className="home-text113">dk2125_nb</span>
@@ -509,7 +509,7 @@ const Home = (props) => {
         </div>
         <div className="home-container26"></div>
         <div className='avatar-and-status'>
-        <img alt="image" src="/logo-200h.png" className="home-image4" />
+        <img alt="image" src="/logo-200h.webp" className="home-image4" />
         <div className='thinking-indicator'/>
         <DiscordStatus/>
         </div>

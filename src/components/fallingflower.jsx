@@ -5,10 +5,10 @@ const FallingFlowers = () => {
 
   useEffect(() => {
     const pictureSrcs = [
-      "./flowers/hoadao.png",
-      "./flowers/hoamai.png",
-      "./flowers/bongtuyet.png",
-      "./flowers/bongtuyettrang.png"
+      "./flowers/hoadao.webp",
+      "./flowers/hoamai.webp",
+      "./flowers/bongtuyet.webp",
+      "./flowers/bongtuyettrang.webp"
     ];
 
     const pictureWidth = 17;

@@ -45,7 +45,7 @@ const Firework = () => {
           }}
         >
           <img
-            src="./firework.png"
+            src="./firework.webp"
             alt="Minecraft Firework Rocket"
             className="firework-rocket"
           />
