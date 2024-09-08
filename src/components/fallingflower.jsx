@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const FallingFlowers = () => {
-  const [flowerImage, setFlowerImage] = useState(null); // Sử dụng useState cho 1 ảnh
+  const [flowerImage, setFlowerImage] = useState(null); // rat chi la iu haanhh nhe
 
   useEffect(() => {
     const pictureSrcs = [
