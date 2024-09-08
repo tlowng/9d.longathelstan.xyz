@@ -47,7 +47,7 @@ const DiscordStatus = () => {
   }, [discordData]);
 
   if (!discordData) {
-    return <div className='loadingStatus'>Loading...</div>;
+    return <div className='custom-status-text'>Viết gì đây taaa...</div>;
   }
 
   const {
