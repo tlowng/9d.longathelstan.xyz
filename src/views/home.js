@@ -1,28 +1,18 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
-
-import FallingFlowers from '../components/fallingflower'
+import MediaQuery from 'react-responsive'
 import Typical from 'react-typical'
 
+import FallingFlowers from '../components/fallingflower'
 import Members from '../components/members'
-import './home.css'
+
 import DiscordStatus from '../components/discordstatus'
 import Firework from '../components/firework'
 import AudioPlayer from '../components/audio'
 import Background from '../components/background'
 
+import './home.css'
 const Home = (props) => {
-  const [xPos, setXPos] = useState(0);
-  const [yPos, setYPos] = useState(0);
-
-  const handleMouseMove = (event) => {
-    const { clientX, clientY } = event;
-    const { innerWidth, innerHeight } = window;
-  
-    setXPos((clientX / innerWidth) * 100);
-    setYPos((clientY / innerHeight) * 100);
-  };
-
   const enterPage = () => {
     const preloadFrame = document.querySelector('.preload');
     if (preloadFrame) {
@@ -62,12 +52,27 @@ const Home = (props) => {
       <AudioPlayer />
       <div className="home-container11">
         <div className="home-container12">
+        <MediaQuery minWidth={768}>
           <img
             alt="image"
-            src="/banner.webp"
-            loading="lazy"
+            src="/banner_large.webp"
             className="home-image1"
           />
+        </MediaQuery>
+        <MediaQuery maxWidth={767} minWidth={480}>
+            <img
+            alt="image"
+            src="/banner_medium.webp"
+            className="home-image1"
+            />
+        </MediaQuery>
+        <MediaQuery maxWidth={479}>
+          <img
+          alt="image"
+          src="/banner_small.webp"
+          className="home-image1"
+          />
+        </MediaQuery>
         </div>
         <div className="home-container13">
           <span className="home-text100">9D K21-25 NB</span>
