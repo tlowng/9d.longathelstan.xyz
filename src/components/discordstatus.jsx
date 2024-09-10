@@ -47,7 +47,7 @@ const DiscordStatus = () => {
   }, [discordData]);
 
   if (!discordData) {
-    return <div className='custom-status-text'>Viết gì đây taaa...</div>;
+    return <div className="custom-status"><span className="custom-status-text">Viết gì đây taa...</span></div>;
   }
 
   const {
