@@ -39,7 +39,7 @@
   background: radial-gradient(circle, rgba(141, 165, 201, 0.4), transparent 80%);
   background-size: 150% 150%;
   transition: background-position 0.03s ease;
-  z-index: 0;
+  z-index: 0;1
 }
 .tooltip {
   visibility: hidden; 
@@ -667,6 +667,9 @@
   }
 }
 @media(max-width: 479px) {
+  .viewCounter {
+    top: 20px;
+  }
   .home-container11 {
     margin-top: 8px;
     margin-bottom: 8px;
