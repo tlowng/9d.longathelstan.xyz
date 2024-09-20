@@ -54,6 +54,8 @@
   border-radius: 12px;
   font-size: 13px;
   white-space: nowrap; 
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out; 
 }
 
 .viewCounter {
@@ -72,6 +74,7 @@
   color: white;
 }
 .viewCounter:hover .tooltip { 
+  opacity: 1;
   visibility: visible;
 }
 .viewIcon {
