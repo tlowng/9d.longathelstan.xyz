@@ -668,7 +668,8 @@
 }
 @media(max-width: 479px) {
   .viewCounter {
-    top: 20px;
+    left: 20px;
+    top: 25px;
   }
   .home-container11 {
     margin-top: 8px;
