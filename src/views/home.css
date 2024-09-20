@@ -39,7 +39,7 @@
   background: radial-gradient(circle, rgba(141, 165, 201, 0.4), transparent 80%);
   background-size: 150% 150%;
   transition: background-position 0.03s ease;
-  z-index: 0;1
+  z-index: 0;
 }
 .tooltip {
   visibility: hidden; 
