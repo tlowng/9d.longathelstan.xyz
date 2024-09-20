@@ -41,7 +41,51 @@
   transition: background-position 0.03s ease;
   z-index: 0;
 }
+.tooltip {
+  visibility: hidden; 
+  position: absolute;
+  bottom: -25px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  background-color: rgba(0, 0, 0, 0.5); 
+  text-shadow: 0 0 6px rgba(255, 255, 255, 1); 
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 13px;
+  white-space: nowrap; 
+}
 
+.viewCounter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  position: absolute; 
+  top: 10px; 
+  right: 20px; 
+  z-index: 10; 
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+}
+.viewCounter:hover .tooltip { 
+  visibility: visible;
+}
+.viewIcon {
+  margin-right: 7px;
+  width: 21px;
+  height: auto;
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 1)); 
+}
+.viewText {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 17px;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 1); 
+}
 .preload {
   position: fixed; 
   top: 0;

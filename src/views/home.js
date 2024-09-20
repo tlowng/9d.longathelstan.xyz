@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react'
+import React, { Fragment, useEffect, useRef} from 'react'
 import { Helmet } from 'react-helmet'
 import MediaQuery from 'react-responsive'
 import Typical from 'react-typical'
@@ -10,9 +10,16 @@ import DiscordStatus from '../components/discordstatus'
 import Firework from '../components/firework'
 import AudioPlayer from '../components/audio'
 import Background from '../components/background'
+import ViewCounter from '../components/viewcounter'
 
 import './home.css'
+
 const Home = (props) => {
+  const viewCounterRef = useRef(null); 
+
+  const handlePreloadClick = () => {
+    console.log("++view");
+  };
   const enterPage = () => {
     const preloadFrame = document.querySelector('.preload');
     if (preloadFrame) {
@@ -46,12 +53,16 @@ const Home = (props) => {
       </Helmet>
       <FallingFlowers/>
       <Firework/>
-      <div className="preload">
+      <div className="preload" onClick={() => {
+        handlePreloadClick();
+        viewCounterRef.current.handleIncrementView();
+      }}>
         <div className="text">ai mời...</div>
       </div>
       <AudioPlayer />
       <div className="home-container11">
         <div className="home-container12">
+        <ViewCounter ref={viewCounterRef} pageId="homepage" /> 
         <MediaQuery minWidth={768}>
           <img
             alt="image"
