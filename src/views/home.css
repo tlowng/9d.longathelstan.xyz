@@ -58,7 +58,6 @@
   opacity: 0; 
   transition: opacity 0.3s ease-in-out; 
 }
-
 .viewCounter {
   display: flex;
   align-items: center;
@@ -78,6 +77,24 @@
   opacity: 1;
   visibility: visible;
 }
+.heart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heart-icon {
+  margin-right: 7px;
+  width: 20px;
+  height: auto;
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 1)); 
+}
+.heart-button .heart-icon { 
+  fill: white; 
+  transition: fill 0.3s ease; 
+}
+.heart-button.liked .heart-icon { 
+  fill: rgb(255, 144, 162);
+}
 .viewIcon {
   margin-right: 7px;
   width: 21px;
@@ -85,6 +102,7 @@
   filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 1)); 
 }
 .viewText {
+  color: white;
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 17px;
@@ -685,7 +703,23 @@
     margin-top 0.2s ease-in-out, 
     border-radius 0.2s ease-in-out; 
   }
-  
+  .heart-button {
+    position: fixed;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    opacity: 0;  
+  }
+  .viewCounter:hover .heart-button { 
+    opacity: 1;
+    visibility: visible;
+  }
+  .heart-icon {
+    width: 16px;
+  }
   .viewCounter:hover {
     margin-top: 6px;
     border-top-left-radius: 20px;
