@@ -46,7 +46,6 @@ function ViewCounter({ pageId }, ref) {
         console.error("Lỗi khi tăng lượt xem:", error);
       }
     }
-
   };
 
   const handleHeartClick = async () => {

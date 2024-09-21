@@ -94,6 +94,7 @@
 }
 .heart-button.liked .heart-icon { 
   fill: rgb(255, 144, 162);
+  filter: drop-shadow(0px 0px 2px rgba(255, 144, 162, 1));
 }
 .viewIcon {
   margin-right: 7px;
