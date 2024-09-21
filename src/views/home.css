@@ -677,10 +677,20 @@
     border-top-right-radius: 0px;
     position: fixed;
     top: 0px;
-    left: auto;  
-    right: auto;  
-    width: auto;   
+    left: auto;
+    right: auto;
+    width: 65px;
     z-index: 100;
+    transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+    margin-top 0.2s ease-in-out, 
+    border-radius 0.2s ease-in-out; 
+  }
+  
+  .viewCounter:hover {
+    margin-top: 6px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: calc(100% - 65px); 
   }
   .viewIcon {
     width: 16px;
