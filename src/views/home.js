@@ -44,8 +44,9 @@ const Home = (props) => {
     };
   }, []);
   return (
-    <div>
+    <div className='homePage'>
       <Background/>
+      <ViewCounter ref={viewCounterRef} pageId="homepage" /> 
     <div className="home-container10">
       <Helmet>
         <title>9D K21-25 NB</title>
@@ -62,7 +63,7 @@ const Home = (props) => {
       <AudioPlayer />
       <div className="home-container11">
         <div className="home-container12">
-        <ViewCounter ref={viewCounterRef} pageId="homepage" /> 
+        
         <MediaQuery minWidth={768}>
           <img
             alt="image"
