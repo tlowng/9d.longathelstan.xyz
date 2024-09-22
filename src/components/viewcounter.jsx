@@ -7,6 +7,15 @@ function ViewCounter({ pageId }, ref) {
 
   const [hearts, setHearts] = useState(0);
   const [liked, setLiked] = useState(false);
+  const [barHeights, setBarHeights] = useState(Array(6).fill(0)); 
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setBarHeights(barHeights.map(() => Math.random() * 100));
+    }, 100); 
+
+    return () => clearInterval(intervalId);
+  }, []);
 
   useEffect(() => {
     const fetchPageData = async () => {
@@ -75,6 +84,11 @@ function ViewCounter({ pageId }, ref) {
 
   return (
     <div className='viewCounter'>
+      <div className="audio-visualizer">
+        {barHeights.map((height, index) => (
+          <div key={index} className="bar" style={{ height: `${height}%` }}></div>
+        ))}
+      </div>
       <img src='views.svg' className='viewIcon'/>
       <span className='viewText'>{views}</span>
       <span className="tooltip">Lượt Xem & Tim</span>
