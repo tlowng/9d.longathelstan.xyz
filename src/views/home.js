@@ -67,21 +67,21 @@ const Home = (props) => {
         <MediaQuery minWidth={768}>
           <img
             alt="image"
-            src="/banner_large.webp"
+            src="/banner1.webp"
             className="home-image1"
           />
         </MediaQuery>
         <MediaQuery maxWidth={767} minWidth={480}>
             <img
             alt="image"
-            src="/banner_medium.webp"
+            src="/banner1.webp"
             className="home-image1"
             />
         </MediaQuery>
         <MediaQuery maxWidth={479}>
           <img
           alt="image"
-          src="/banner_small.webp"
+          src="/banner1.webp"
           className="home-image1"
           />
         </MediaQuery>
