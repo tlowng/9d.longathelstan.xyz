@@ -107,7 +107,7 @@ const DiscordStatus = () => {
       ) : null}
       {!customStatus.state ? (
         <div className="custom-status">
-          <span className="custom-status-text">we are tryhard🔥</span>
+          <span className="custom-status-text">we are tryhard🔥🔥</span>
         </div>
       ): null}
     </div>
