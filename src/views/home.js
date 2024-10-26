@@ -58,7 +58,7 @@ const Home = (props) => {
         handlePreloadClick();
         viewCounterRef.current.handleIncrementView();
       }}>
-        <div className="text">ai mời...</div>
+        <div className="text">tryhard...</div>
       </div>
       <AudioPlayer />
       <div className="home-container11">
