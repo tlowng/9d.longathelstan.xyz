@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useImperativeHandle  } from 'react';
 import { db } from '../lib/firebaseConfig'; 
 import { doc, getDoc, updateDoc, arrayUnion } from 'firebase/firestore';
+import AudioDestination from './audiodestination';
 
 function ViewCounter({ pageId }, ref) {
   const [views, setViews] = useState(0);
@@ -83,6 +84,7 @@ function ViewCounter({ pageId }, ref) {
   }));
 
   return (
+
     <div className='viewCounter'>
       <div className="audio-visualizer">
         {barHeights.map((height, index) => (
@@ -103,6 +105,7 @@ function ViewCounter({ pageId }, ref) {
         <span className='viewText'>{hearts}</span>
       </button>
     </div>
+
   );
 }
 
