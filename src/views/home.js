@@ -13,6 +13,8 @@ import Background from '../components/background'
 import ViewCounter from '../components/viewcounter'
 
 import './home.css'
+import AnimatedGif from '../components/animated_gif'
+import ReindeerAnimation from '../components/reindeeranimation'
 
 const Home = (props) => {
   const viewCounterRef = useRef(null); 
@@ -60,7 +62,10 @@ const Home = (props) => {
       }}>
         <div className="text">mời vào...</div>
       </div>
+      
       <AudioPlayer />
+      <ReindeerAnimation/>
+      <AnimatedGif/>
       <div className="home-container11">
         <div className="home-container12">
         
@@ -89,7 +94,7 @@ const Home = (props) => {
         <div className="home-container13">
           <span className="home-text100">9D K21-25 NB</span>
           <span className="home-text101">
-            <span>34 bé</span>
+            <span>34 khứa</span>
             <br></br>
           </span>
         </div>
@@ -516,6 +521,7 @@ const Home = (props) => {
         </div>
         <div className="home-container26"></div>
         <div className='avatar-and-status'>
+        <img alt="image" src="/avatar_decorations/christmas.webp" className='avatar_decorations'/>
         <img alt="image" src="/logo-200h.webp" className="home-image4" />
         <div className='thinking-indicator'/>
         <DiscordStatus/>

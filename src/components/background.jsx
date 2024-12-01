@@ -4,13 +4,14 @@ const Background = () => {
   const [currentImage, setCurrentImage] = useState(null);
 
   const imageList = [
-    "./bg/1.gif",
+ /*   "./bg/1.gif",
     "./bg/2.gif",
     "./bg/3.gif", 
-    "./bg/4.gif",
     "./bg/5.gif",
     "./bg/6.gif",
-    "./bg/bg.gif"  
+    "./bg/bg.gif" */ 
+    "./bg/4.gif",
+    "./bg/7.gif"
   ];
 
   const getRandomImage = () => {

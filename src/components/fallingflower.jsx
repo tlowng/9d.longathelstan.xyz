@@ -5,14 +5,15 @@ const FallingFlowers = () => {
 
   useEffect(() => {
     const pictureSrcs = [
-      "./flowers/hoadao.webp",
+/*      "./flowers/hoadao.webp",
       "./flowers/hoamai.webp",
+      */
+      "./flowers/bongtuyettrang.webp",
       "./flowers/bongtuyet.webp",
-      "./flowers/bongtuyettrang.webp"
     ];
 
-    const pictureWidth = 17;
-    const pictureHeight = 17;
+    const pictureWidth = 23;
+    const pictureHeight = 23;
     const numFlakes = 10;
     const downSpeed = 0.001;
     const lrFlakes = 10;
@@ -69,15 +70,15 @@ const FallingFlowers = () => {
           style={{
             position: "absolute",
             zIndex: 9999,
-            width: "17px",
-            height: "17px",
+            width: "23px",
+            height: "23px",
             pointerEvents: "none",
           }}
         >
           <img
             src={flowerImage}
-            width={17}
-            height={17}
+            width={23}
+            height={23}
             className="fallingFlower"
             alt="flower"
           />
