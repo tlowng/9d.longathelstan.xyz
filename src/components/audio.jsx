@@ -20,7 +20,7 @@ const AudioPlayer = () => {
 
       if (audioSourceRef.current === null) {
         // audioSourceRef.current = require(`./audio/${randomAudioFile}`);
-        audioSourceRef.current = require(`./audio/christmas/${randomAudioFile}`);
+        audioSourceRef.current = require(`./audio/lny/${randomAudioFile}`);
       }
     }
   }, [audioNames]);

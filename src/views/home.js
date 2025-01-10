@@ -14,7 +14,10 @@ import ViewCounter from '../components/viewcounter'
 
 import './home.css'
 import AnimatedGif from '../components/animated_gif'
-import ReindeerAnimation from '../components/reindeeranimation'
+/**
+ * Christmas Theme
+ * import ReindeerAnimation from '../components/christmas_theme/reindeeranimation'
+ */
 
 const Home = (props) => {
   const viewCounterRef = useRef(null); 
@@ -64,8 +67,16 @@ const Home = (props) => {
       </div>
       
       <AudioPlayer />
-      <ReindeerAnimation/>
-      <AnimatedGif/>
+      {/**
+       * Christmas Theme
+       * <ReindeerAnimation/>
+      */}
+      {
+        /**
+         * Animated Gif component
+         * <AnimatedGif/>
+         */
+      }
       <div className="home-container11">
         <div className="home-container12">
         
@@ -521,8 +532,8 @@ const Home = (props) => {
         </div>
         <div className="home-container26"></div>
         <div className='avatar-and-status'>
-        <img alt="image" src="/avatar_decorations/christmas.webp" className='avatar_decorations'/>
-        <img alt="image" src="/logo-200h.webp" className="home-image4" />
+        <img alt="image" src="https://cdn.discordapp.com/avatar-decoration-presets/a_13913a00bd9990ab4102a3bf069f0f3f.png?size=300&passthrough=true" className='avatar_decorations'/>
+        <img alt="image" src="/9D-lny.webp" className="home-image4" />
         <div className='thinking-indicator'/>
         <DiscordStatus/>
         </div>

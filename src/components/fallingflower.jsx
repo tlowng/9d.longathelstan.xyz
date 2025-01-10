@@ -8,8 +8,7 @@ const FallingFlowers = () => {
 /*      "./flowers/hoadao.webp",
       "./flowers/hoamai.webp",
       */
-      "./flowers/bongtuyettrang.webp",
-      "./flowers/bongtuyet.webp",
+      "./flowers/hoadao.webp",
     ];
 
     const pictureWidth = 23;

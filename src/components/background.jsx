@@ -4,14 +4,12 @@ const Background = () => {
   const [currentImage, setCurrentImage] = useState(null);
 
   const imageList = [
- /*   "./bg/1.gif",
-    "./bg/2.gif",
-    "./bg/3.gif", 
-    "./bg/5.gif",
-    "./bg/6.gif",
-    "./bg/bg.gif" */ 
-    "./bg/4.gif",
-    "./bg/7.gif"
+    "./bg/lny_theme/1.webp",
+    "./bg/lny_theme/2.webp",
+    "./bg/lny_theme/3.webp",
+    "./bg/lny_theme/4.webp",
+    "./bg/lny_theme/5.webp",
+    "./bg/lny_theme/6.webp",
   ];
 
   const getRandomImage = () => {

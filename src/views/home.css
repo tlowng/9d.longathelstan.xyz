@@ -188,7 +188,7 @@
   border-radius: 10px;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #7782BE;
+  background-color: #D43441;
 }
 .home-image2 {
   width: 100%;
@@ -269,7 +269,7 @@
   height: 40px;
   display: flex;
   align-items: center;
-  border-color: #5579AF;
+  border-color: #D43441;
   border-width: 1px;
   justify-content: flex-start;
   border-top-width: 0px;
@@ -278,7 +278,7 @@
   border-bottom-width: 2px;
 }
 .home-text104 {
-  color: rgb(85, 121, 175);
+  color: rgb(212, 52, 65);
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
@@ -303,14 +303,14 @@
   justify-content: flex-start;
 }
 .home-text105 {
-  fill: #5579AF;
-  color: #5579AF;
+  fill: #D43441;
+  color: #D43441;
   font-size: 17px;
   align-self: flex-start;
   margin-bottom: 10px;
 }
 .home-text108 {
-  color: rgb(85, 121, 175);
+  color: #FF7872;
   font-size: 15px;
   font-style: normal;
   font-weight: 300;
@@ -325,8 +325,8 @@
   justify-content: flex-start;
 }
 .home-text109 {
-  fill: #5579AF;
-  color: rgb(85, 121, 175);
+  fill: #D43441;
+  color: rgb(212, 52, 65);
   font-size: 17px;
   align-self: flex-start;
   margin-bottom: 10px;
@@ -349,7 +349,7 @@
   display: flex;
   transition: 0.1s;
   align-items: center;
-  border-color: #5579AF;
+  border-color: #D43441;
   border-style: solid;
   border-width: 2px;
   border-radius: var(--dl-radius-radius-radius8);
@@ -357,7 +357,7 @@
   text-decoration: none;
 }
 .home-container20:hover {
-  background-color: #8DA5C9;
+  background-color: #FFA5A1;
 }
 .home-container20:active {
   margin-top: var(--dl-space-space-halfunit);
@@ -375,13 +375,13 @@
   object-fit: cover;
 }
 .home-text112 {
-  fill: #5579AF;
-  color: #5579AF;
+  fill: #FF7872;
+  color: #FF7872;
   margin-left: var(--dl-space-space-halfunit);
 }
 .home-icon1 {
-  fill: #5579AF;
-  color: #5579AF;
+  fill: #FF7872;
+  color: #FF7872;
   align-self: center;
   margin-right: var(--dl-space-space-halfunit);
 }
@@ -395,7 +395,7 @@
   display: flex;
   transition: 0.1s;
   align-items: center;
-  border-color: #5579AF;
+  border-color: #D43441;
   border-style: solid;
   border-width: 2px;
   border-radius: var(--dl-radius-radius-radius8);
@@ -403,7 +403,7 @@
   text-decoration: none;
 }
 .home-container22:hover {
-  background-color: #8DA5C9;
+  background-color: #FFA5A1;
 }
 .home-container22:active {
   margin-top: var(--dl-space-space-halfunit);
@@ -421,12 +421,12 @@
   margin-left: var(--dl-space-space-halfunit);
 }
 .home-text113 {
-  color: rgb(85, 121, 175);
+  color: #FF7872;
   margin-left: var(--dl-space-space-halfunit);
 }
 .home-icon3 {
-  fill: #5579AF;
-  color: #5579AF;
+  fill: #FF7872;
+  color: #FF7872;
   align-self: center;
   margin-right: var(--dl-space-space-halfunit);
 }
@@ -441,8 +441,8 @@
   justify-content: flex-start;
 }
 .home-text114 {
-  fill: #5579AF;
-  color: rgb(85, 121, 175);
+  fill: #D43441;
+  color: rgb(212, 52, 65);
   font-size: 17px;
   align-self: flex-start;
   margin-bottom: 10px;
@@ -459,7 +459,7 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
   align-items: flex-start;
-  border-color: #5579AF;
+  border-color: #D43441;
   border-style: dashed;
   border-width: 2px;
   justify-content: center;
@@ -470,194 +470,194 @@
   display: none; 
 }
 .home-text117 {
-  fill: #7782BE;
-  color: #7782BE;
+  fill: #FF7872;
+  color: #FF7872;
   display: inline-block;
   margin-bottom: var(--dl-space-space-halfunit);
 }
 .home-text120 {
-  fill: #7782BE;
-  color: #7782BE;
+  fill: #FF7872;
+  color: #FF7872;
   display: inline-block;
   margin-bottom: var(--dl-space-space-halfunit);
 }
 .home-text121 {
-  fill: #7782BE;
-  color: #7782BE;
+  fill: #FF7872;
+  color: #FF7872;
   display: inline-block;
 }
 .home-text122 {
-  fill: #7782BE;
-  color: #7782BE;
+  fill: #FF7872;
+  color: #FF7872;
   display: inline-block;
 }
 .home-text123 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
   margin-bottom: var(--dl-space-space-halfunit);
 }
 .home-text126 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text129 {
-  color: rgb(119, 130, 190);
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text130 {
-  color: rgb(119, 130, 190);
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text131 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text134 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text137 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text140 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text143 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text146 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text149 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text152 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text155 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text158 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text161 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text164 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text167 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text170 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text173 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text176 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text179 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text182 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text185 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text188 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text191 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text194 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text197 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text200 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text203 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text206 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text209 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text212 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text215 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-text218 {
-  fill: #7782BE;
-  color: rgb(119, 130, 190);
+  fill: #D43441;
+  color: rgb(255, 120, 114);
   display: inline-block;
 }
 .home-container26 {
@@ -671,7 +671,7 @@
   position: absolute;
   align-items: flex-start;
   border-radius: var(--dl-radius-radius-round);
-  background-color: #7782BE;
+  background-color: #D43441;
 }
 .avatar-and-status {
   top: 123px;
