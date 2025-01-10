@@ -1,7 +1,7 @@
 /* Flying santa*/
 .reindeeranimation{
-	height: 480px;
-	width: 350px;
+	height: 150px;
+	width: 140px;
 	-webkit-transform: translate(-50%,-50%);
 	    -ms-transform: translate(-50%,-50%);
 	        transform: translate(-50%,-50%);
