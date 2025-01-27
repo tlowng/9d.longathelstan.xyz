@@ -673,6 +673,13 @@
   border-radius: var(--dl-radius-radius-round);
   background-color: #D43441;
 }
+.profileEffect {
+  position: fixed;
+  height: 400px;
+  width: 450px;
+  object-fit: cover;
+  object-position: 0 0;
+}
 .avatar-and-status {
   top: 123px;
   left: 25px;
@@ -683,10 +690,10 @@
 }
 .avatar_decorations {
   width: auto;
-  height: 125px;
+  height: 120px;
   position: fixed;
   z-index: 10;
-  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7)); 
+  filter: drop-shadow(0px 0px 5px rgba(212, 52, 65, 0.7)); 
 }
 .home-image4 {
   width: auto;

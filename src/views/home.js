@@ -78,6 +78,7 @@ const Home = (props) => {
          */
       }
       <div className="home-container11">
+        <img alt="image" src="https://cdn.discordapp.com/assets/profile_effects/effects/2025-01-17/twist-of-luck/idle.png" className="profileEffect" loop/>
         <div className="home-container12">
         
         <MediaQuery minWidth={768}>
@@ -532,12 +533,11 @@ const Home = (props) => {
         </div>
         <div className="home-container26"></div>
         <div className='avatar-and-status'>
-        <img alt="image" src="https://cdn.discordapp.com/avatar-decoration-presets/a_13913a00bd9990ab4102a3bf069f0f3f.png?size=300&passthrough=true" className='avatar_decorations'/>
+        <img alt="image" src="https://cdn.discordapp.com/avatar-decoration-presets/a_445566ed965b2c1632a5b45c92f32d11.png?size=600&passthrough=true" className='avatar_decorations'/>
         <img alt="image" src="/9D-lny.webp" className="home-image4" />
         <div className='thinking-indicator'/>
         <DiscordStatus/>
         </div>
-        
       </div>
     </div>
     </div>
