@@ -14,6 +14,13 @@ import ViewCounter from '../components/viewcounter'
 
 import './home.css'
 import AnimatedGif from '../components/animated_gif'
+
+// Import moved images from src/assets/images
+import banner1 from '../assets/images/banner1.webp';
+import insta200h from '../assets/images/insta-200h.webp';
+import tik200w from '../assets/images/tik-200w.webp';
+import nineDLny from '../assets/images/9D-lny.webp';
+
 /**
  * Christmas Theme
  * import ReindeerAnimation from '../components/christmas_theme/reindeeranimation'
@@ -81,27 +88,12 @@ const Home = (props) => {
         <img alt="image" src="https://cdn.discordapp.com/assets/profile_effects/effects/2025-01-17/twist-of-luck/idle.png" className="profileEffect" loop/>
         <div className="home-container12">
         
-        <MediaQuery minWidth={768}>
-          <img
-            alt="image"
-            src="/banner1.webp"
-            className="home-image1"
-          />
-        </MediaQuery>
-        <MediaQuery maxWidth={767} minWidth={480}>
-            <img
-            alt="image"
-            src="/banner1.webp"
-            className="home-image1"
-            />
-        </MediaQuery>
-        <MediaQuery maxWidth={479}>
-          <img
+        {/* Simplified banner image handling */}
+        <img
           alt="image"
-          src="/banner1.webp"
+          src={banner1}
           className="home-image1"
-          />
-        </MediaQuery>
+        />
         </div>
         <div className="home-container13">
           <span className="home-text100">9D K21-25 NB</span>
@@ -165,7 +157,7 @@ const Home = (props) => {
                     <div className="home-container21">
                       <img
                         alt="image"
-                        src="/insta-200h.webp"
+                        src={insta200h}
                         className="home-image2"
                       />
                       <span className="home-text112">d_k2125.nb</span>
@@ -197,7 +189,7 @@ const Home = (props) => {
                     <div className="home-container23">
                       <img
                         alt="image"
-                        src="/tik-200w.webp"
+                        src={tik200w}
                         className="home-image3"
                       />
                       <span className="home-text113">dk2125_nb</span>
@@ -228,313 +220,15 @@ const Home = (props) => {
               </span>
             </div>
             <div className="home-container25">
-              <Members
-                text2={
-                  <Fragment>
-                    <span className="home-text117">
-                      <span>Lớp trưởng</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text3={
-                  <Fragment>
-                    <span className="home-text120">Website owner</span>
-                  </Fragment>
-                }
-                text4={
-                  <Fragment>
-                    <span className="home-text121">Quỳnh Nhi</span>
-                  </Fragment>
-                }
-                text5={
-                  <Fragment>
-                    <span className="home-text122">Việt Anh</span>
-                  </Fragment>
-                }
-                text21={
-                  <Fragment>
-                    <span className="home-text123">
-                      <span>Website owner</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text22={
-                  <Fragment>
-                    <span className="home-text126">
-                      <span>Quàng Tử</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text31={
-                  <Fragment>
-                    <span className="home-text129">Công Túa</span>
-                  </Fragment>
-                }
-                text41={
-                  <Fragment>
-                    <span className="home-text130">Thăng Long</span>
-                  </Fragment>
-                }
-                text42={
-                  <Fragment>
-                    <span className="home-text131">
-                      <span>Đức Anh</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text51={
-                  <Fragment>
-                    <span className="home-text134">
-                      <span>Diệp Chi</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text421={
-                  <Fragment>
-                    <span className="home-text137">
-                      <span>Vũ Nguyên</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text422={
-                  <Fragment>
-                    <span className="home-text140">
-                      <span>Hoài Nam</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text423={
-                  <Fragment>
-                    <span className="home-text143">
-                      <span>Bảo Nam</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text424={
-                  <Fragment>
-                    <span className="home-text146">
-                      <span>Quốc Khánh</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text425={
-                  <Fragment>
-                    <span className="home-text149">
-                      <span>Đức Huy</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text426={
-                  <Fragment>
-                    <span className="home-text152">
-                      <span>Tuấn Dũng</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text427={
-                  <Fragment>
-                    <span className="home-text155">
-                      <span>Anh Dũng</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text428={
-                  <Fragment>
-                    <span className="home-text158">
-                      <span>Lâm Dũng</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text429={
-                  <Fragment>
-                    <span className="home-text161">
-                      <span>Xuân Bình</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text511={
-                  <Fragment>
-                    <span className="home-text164">
-                      <span>Thuỳ Dương</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text512={
-                  <Fragment>
-                    <span className="home-text167">
-                      <span>Minh Giang</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text513={
-                  <Fragment>
-                    <span className="home-text170">
-                      <span>Thu Hiền</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text514={
-                  <Fragment>
-                    <span className="home-text173">
-                      <span>Khánh Huyền</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text515={
-                  <Fragment>
-                    <span className="home-text176">
-                      <span>Bảo Thi</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text516={
-                  <Fragment>
-                    <span className="home-text179">
-                      <span>Hà Linh</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text517={
-                  <Fragment>
-                    <span className="home-text182">
-                      <span>Hoàng Linh</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text518={
-                  <Fragment>
-                    <span className="home-text185">
-                      <span>Diệu Linh</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text519={
-                  <Fragment>
-                    <span className="home-text188">
-                      <span>Kim Ngân</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text4210={
-                  <Fragment>
-                    <span className="home-text191">
-                      <span>Tống Bảo</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text4211={
-                  <Fragment>
-                    <span className="home-text194">
-                      <span>Lê Bảo</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text4212={
-                  <Fragment>
-                    <span className="home-text197">
-                      <span>Chí Thành</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text4213={
-                  <Fragment>
-                    <span className="home-text200">
-                      <span>Tuấn Việt</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text5110={
-                  <Fragment>
-                    <span className="home-text203">
-                      <span>Thảo Như</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text5111={
-                  <Fragment>
-                    <span className="home-text206">
-                      <span>Lan Phương</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text5112={
-                  <Fragment>
-                    <span className="home-text209">
-                      <span>Mai Quyên</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text5113={
-                  <Fragment>
-                    <span className="home-text212">
-                      <span>Huyền Tâm</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text5114={
-                  <Fragment>
-                    <span className="home-text215">
-                      <span>Hồng Thắm</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text5115={
-                  <Fragment>
-                    <span className="home-text218">
-                      <span>Khánh Linh</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                text5116={
-                  <Fragment>
-                    <span className="home-text219">
-                      <span>Thảo Vy</span>
-                      <br></br>
-                    </span>
-                  </Fragment>
-                }
-                rootClassName="membersroot-class-name"
-              ></Members>
+              {/* Members component no longer needs individual text props */}
+              <Members rootClassName="membersroot-class-name" />
             </div>
           </div>
         </div>
         <div className="home-container26"></div>
         <div className='avatar-and-status'>
-        <img alt="image" src="https://cdn.discordapp.com/avatar-decoration-presets/a_445566ed965b2c1632a5b45c92f32d11.png?size=600&passthrough=true" className='avatar_decorations'/>
-        <img alt="image" src="/9D-lny.webp" className="home-image4" />
+        <img alt="image" src="https://cdn.discordapp.com/assets/profile_effects/effects/2025-01-17/twist-of-luck/idle.png" className='profileEffect' loop/>
+        <img alt="image" src={nineDLny} className="home-image4" />
         <div className='thinking-indicator'/>
         <DiscordStatus/>
         </div>

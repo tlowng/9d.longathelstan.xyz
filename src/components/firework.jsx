@@ -1,6 +1,9 @@
 import React, { useState, useRef } from 'react';
 import './Firework.css';
-import fireworkSound from './firework.mp3';
+// Corrected import path for firework.mp3
+import fireworkSound from '../assets/audio/firework.mp3';
+// Import firework.webp from the new assets path
+import fireworkImage from '../assets/images/firework.webp';
 
 const Firework = () => {
   const [fireworks, setFireworks] = useState([]);
@@ -45,7 +48,7 @@ const Firework = () => {
           }}
         >
           <img
-            src="./firework.webp"
+            src={fireworkImage} // Use the imported image
             alt="Minecraft Firework Rocket"
             className="firework-rocket"
           />

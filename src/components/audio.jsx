@@ -1,33 +1,28 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import './members.css'; // Keep this import if members.css is still needed
+
+// Import the specific audio files used from the new assets path
+import lny1 from '../assets/audio/lny/1.mp3';
+import lny2 from '../assets/audio/lny/2.mp3';
+
+// Array of available audio files to choose from
+const lnyAudios = [lny1, lny2];
 
 const AudioPlayer = () => {
-    const [audioNames, setAudioNames] = useState([
-        "1.mp3", 
-        "2.mp3",
-/*        "3.mp3", 
-        "4.mp3",
-        "5.mp3",*/
-      ]);
-      
-  const [randomAudioFile, setAudioFile] = useState('');
-  const audioSourceRef = useRef(null);
+  const [audioSrc, setAudioSrc] = useState(null);
 
   useEffect(() => {
-    if (audioNames.length > 0) {
-      const randomIndex = Math.floor(Math.random() * audioNames.length);
-      const randomAudioFile = audioNames[randomIndex];
-      setAudioFile(randomAudioFile);
-
-      if (audioSourceRef.current === null) {
-        // audioSourceRef.current = require(`./audio/${randomAudioFile}`);
-        audioSourceRef.current = require(`./audio/lny/${randomAudioFile}`);
-      }
-    }
-  }, [audioNames]);
+    // Select a random audio file when the component mounts
+    const randomIndex = Math.floor(Math.random() * lnyAudios.length);
+    const randomAudio = lnyAudios[randomIndex];
+    setAudioSrc(randomAudio);
+  }, []); // Empty dependency array means this effect runs only once on mount
 
   return (
+    // Use the audioSrc state for the <audio> tag's src
     <audio
-      src={audioSourceRef.current}
+      src={audioSrc}
       className="myAudio"
       preload="auto"
       loop
@@ -35,5 +30,14 @@ const AudioPlayer = () => {
     />
   );
 };
+
+// Keep PropTypes if you still need them, or remove if no props are used.
+// Based on the refactoring, no props are used currently.
+// You might want to remove PropTypes for simplicity unless you plan to add props later.
+/*
+AudioPlayer.propTypes = {
+  // Add any props here if needed in the future
+};
+*/
 
 export default AudioPlayer;
