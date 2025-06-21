@@ -8,7 +8,7 @@ import Members from '../components/members'
 
 import DiscordStatus from '../components/discordstatus'
 import Firework from '../components/firework'
-import AudioPlayer from '../components/audio'
+import AudioToggle from '../components/AudioToggle'
 import Background from '../components/background'
 import ViewCounter from '../components/viewcounter'
 
@@ -37,10 +37,8 @@ const Home = (props) => {
     if (preloadFrame) {
       preloadFrame.classList.add('hidden');
     }
-    const audioElement = document.querySelector('.myAudio');
-    if (audioElement) {
-      audioElement.play();
-    }
+
+    window.dispatchEvent(new Event('trigger-audio-autoplay'));
   };
 
   useEffect(() => {
@@ -58,6 +56,7 @@ const Home = (props) => {
   return (
     <div className='homePage'>
       <Background/>
+      <AudioToggle />
       <ViewCounter ref={viewCounterRef} pageId="homepage" /> 
     <div className="home-container10">
       <Helmet>
@@ -65,15 +64,14 @@ const Home = (props) => {
         <meta property="og:title" content="9D K21-25 NB" />
       </Helmet>
       <FallingFlowers/>
-      <Firework/>
       <div className="preload" onClick={() => {
         handlePreloadClick();
         viewCounterRef.current.handleIncrementView();
       }}>
-        <div className="text">mời vào...</div>
+        <div className="text">ấn vào đi...</div>
       </div>
       
-      <AudioPlayer />
+     
       {/**
        * Christmas Theme
        * <ReindeerAnimation/>
@@ -85,7 +83,6 @@ const Home = (props) => {
          */
       }
       <div className="home-container11">
-        <img alt="image" src="https://cdn.discordapp.com/assets/profile_effects/effects/2025-01-17/twist-of-luck/idle.png" className="profileEffect" loop/>
         <div className="home-container12">
         
         {/* Simplified banner image handling */}
@@ -227,7 +224,7 @@ const Home = (props) => {
         </div>
         <div className="home-container26"></div>
         <div className='avatar-and-status'>
-        <img alt="image" src="https://cdn.discordapp.com/assets/profile_effects/effects/2025-01-17/twist-of-luck/idle.png" className='profileEffect' loop/>
+        <img alt="image" src="https://cdn.discordapp.com/avatar-decoration-presets/a_445566ed965b2c1632a5b45c92f32d11.png?size=600&passthrough=true" className='avatar_decorations'/>
         <img alt="image" src={nineDLny} className="home-image4" />
         <div className='thinking-indicator'/>
         <DiscordStatus/>
