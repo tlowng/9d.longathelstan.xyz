@@ -224,7 +224,7 @@ const Home = (props) => {
         </div>
         <div className="home-container26"></div>
         <div className='avatar-and-status'>
-        <img alt="image" src="https://cdn.discordapp.com/avatar-decoration-presets/a_445566ed965b2c1632a5b45c92f32d11.png?size=600&passthrough=true" className='avatar_decorations'/>
+        <img alt="image" src="https://cdn.discordapp.com/avatar-decoration-presets/a_3513b3b45624e47a4855f6951eea484d.png?size=600&passthrough=true" className='avatar_decorations'/>
         <img alt="image" src={nineDLny} className="home-image4" />
         <div className='thinking-indicator'/>
         <DiscordStatus/>

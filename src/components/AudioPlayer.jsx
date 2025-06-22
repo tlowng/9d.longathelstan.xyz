@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './AudioPlayer.css';
 
-// Danh sách bài hát
 const audioTracks = [
   {
     title: 'Đại Lộ Mặt Trời',
