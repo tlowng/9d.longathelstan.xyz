@@ -1,7 +1,8 @@
 import React, { Fragment, useEffect, useRef} from 'react'
 import { Helmet } from 'react-helmet'
 import MediaQuery from 'react-responsive'
-import Typical from 'react-typical'
+import Typewriter from 'typewriter-effect';
+
 
 import FallingFlowers from '../components/fallingflower'
 import Members from '../components/members'
@@ -16,10 +17,11 @@ import './home.css'
 import AnimatedGif from '../components/animated_gif'
 
 // Import moved images from src/assets/images
-import banner1 from '../assets/images/banner1.webp';
+
 import insta200h from '../assets/images/insta-200h.webp';
 import tik200w from '../assets/images/tik-200w.webp';
 import nineDLny from '../assets/images/9D-lny.webp';
+import BannerInteraction from '../components/banner'
 
 /**
  * Christmas Theme
@@ -70,8 +72,6 @@ const Home = (props) => {
       }}>
         <div className="text">ấn vào đi...</div>
       </div>
-      
-     
       {/**
        * Christmas Theme
        * <ReindeerAnimation/>
@@ -84,13 +84,8 @@ const Home = (props) => {
       }
       <div className="home-container11">
         <div className="home-container12">
-        
         {/* Simplified banner image handling */}
-        <img
-          alt="image"
-          src={banner1}
-          className="home-image1"
-        />
+        <BannerInteraction/>
         </div>
         <div className="home-container13">
           <span className="home-text100">9D K21-25 NB</span>
@@ -102,22 +97,21 @@ const Home = (props) => {
         <div className="home-container14">
           <div className="home-container15">
             <span className="home-text104">
-              <Typical
-              loop={Infinity}
-              wrapper="p"
-              steps={[
-                'Chào mừng đến với website của class 9D :)',
-                1000,
-                'Được phát triển bởi Tlowng(longathelstan):3',
-                500,
-                'vào đây để làm gì ????',
-                500,
-                'tìm info của crush ak :)',
-                2000,
-                '© 9d.longathelstan.xyz, tlowng ft. toidicakhia All rights reserved.',
-                1000
-              ]}
-              ></Typical>
+              <Typewriter
+                options={{
+                strings: [
+                  'Chào mừng đến với website của class 9D :)',
+                  'Được phát triển bởi Tlowng(longathelstan):3',
+                  'vào đây để làm gì ????',
+                  'tìm info của crush ak :)',
+                  '© 9d.longathelstan.xyz, lowng ft. toidicakhia All rights reserved.'
+                ],
+                autoStart: true,
+                loop: true,
+                delay: 50,
+                deleteSpeed: 20,
+              }}
+              />
 
             </span>
           </div>
@@ -128,14 +122,17 @@ const Home = (props) => {
                 <br></br>
               </span>
               <span className="home-text108">
-              <Typical
-                  steps={[
-                    'Vùng đất 9d chứa 18 cô công túa và 16 chàng quàng tử đã tạo thành một sự kết hợp hoàn hảo C₈H₁₁NO₂ (dopamine) + C₁₀H₁₂N₂O (seratonin) + C₄₃H₆₆N₁₃O₁₂S₂ "công thức hóa học của Tình yêu".',
-                    1000,
-                  ]}
-                  loop={1}
-                  wrapper="p"
-                />
+                <Typewriter
+  options={{
+    strings: [
+      'Vùng đất 9d chứa 18 cô công túa và 16 chàng quàng tử đã tạo thành một sự kết hợp hoàn hảo C₈H₁₁NO₂ (dopamine) + C₁₀H₁₂N₂O (seratonin) + C₄₃H₆₆N₁₃O₁₂S₂ "công thức hóa học của Tình yêu".'
+    ],
+    autoStart: true,
+    loop: true,
+    delay: 35,
+  }}
+/>
+
               </span>
             </div>
             <div className="home-container18">

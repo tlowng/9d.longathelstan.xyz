@@ -1,14 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 import {
   BrowserRouter as Router,
   Route,
   Switch,
   Redirect,
-} from 'react-router-dom'
+} from 'react-router-dom';
 
-import './style.css'
-import Home from './views/home'
+import './style.css';
+import Home from './views/home';
 
 const App = () => {
   return (
@@ -19,7 +19,9 @@ const App = () => {
         <Redirect to="**" />
       </Switch>
     </Router>
-  )
-}
+  );
+};
 
-ReactDOM.render(<App />, document.getElementById('app'))
+const container = document.getElementById('app');
+const root = createRoot(container);
+root.render(<App />);
