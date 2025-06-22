@@ -1,33 +1,12 @@
 // src/data/bannerData.js
 
-import banner1 from "../assets/images/banner/banner1.webp";
-import banner2 from "../assets/images/banner/banner2.jpg";
-import banner3 from "../assets/images/banner/banner3.jpg";
-
-export const bannerImages = [banner1, banner2, banner3];
-
 export const timelineImages = {
   "Tháng 8/2024": [
     "/timeline/8-2024/1.webp",
-    "/timeline/8-2024/2.webp",
-    "/timeline/8-2024/3.webp",
-    "/timeline/8-2024/4.webp",
-    "/timeline/8-2024/5.webp",
-    "/timeline/8-2024/6.webp",
-    "/timeline/8-2024/7.webp",
-    "/timeline/8-2024/8.webp",
-    "/timeline/8-2024/9.webp"
+
   ],
   "Tháng 9/2024": [
-    "/timeline/9-2024/1.webp",
-    "/timeline/9-2024/2.webp",
-    "/timeline/9-2024/3.webp",
-    "/timeline/9-2024/4.webp",
-    "/timeline/9-2024/5.webp",
-    "/timeline/9-2024/6.webp",
-    "/timeline/9-2024/7.webp",
-    "/timeline/9-2024/8.webp",
-    "/timeline/9-2024/9.webp"
+
   ],
   "Tháng 10/2024": [],
   "Tháng 11/2024": [],
@@ -37,5 +16,45 @@ export const timelineImages = {
   "Tháng 3/2025": [],
   "Tháng 4/2025": [],
   "Tháng 5/2025": [],
-  "Tháng 6/2025": []
+  "Tháng 6/2025": [
+    "/timeline/6-2025/1.webp",
+"/timeline/6-2025/2.webp",
+"/timeline/6-2025/3.webp",
+"/timeline/6-2025/4.webp",
+"/timeline/6-2025/5.webp",
+"/timeline/6-2025/6.webp",
+"/timeline/6-2025/7.webp",
+"/timeline/6-2025/8.webp",
+"/timeline/6-2025/9.webp",
+"/timeline/6-2025/10.webp",
+"/timeline/6-2025/11.webp",
+"/timeline/6-2025/12.webp",
+"/timeline/6-2025/13.webp",
+"/timeline/6-2025/14.webp",
+"/timeline/6-2025/15.webp",
+"/timeline/6-2025/16.webp",
+"/timeline/6-2025/17.webp",
+"/timeline/6-2025/18.webp",
+"/timeline/6-2025/19.webp",
+"/timeline/6-2025/20.webp",
+"/timeline/6-2025/21.webp",
+"/timeline/6-2025/22.webp",
+"/timeline/6-2025/23.webp",
+"/timeline/6-2025/24.webp",
+"/timeline/6-2025/25.webp",
+"/timeline/6-2025/26.webp",
+"/timeline/6-2025/27.webp",
+"/timeline/6-2025/28.webp",
+"/timeline/6-2025/29.webp",
+"/timeline/6-2025/30.webp",
+"/timeline/6-2025/31.webp",
+"/timeline/6-2025/32.webp",
+"/timeline/6-2025/33.webp",
+"/timeline/6-2025/34.webp",
+"/timeline/6-2025/35.webp",
+"/timeline/6-2025/36.webp",
+"/timeline/6-2025/37.webp",
+"/timeline/6-2025/38.webp",
+"/timeline/6-2025/39.webp",
+  ]
 };
