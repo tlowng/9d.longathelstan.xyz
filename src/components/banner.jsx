@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { timelineImages } from "../data/bannerData";
-import TimelinePopup from "./TimelinePopup"; // 👈 Import
+import TimelinePopup from "./TimelinePopup"; 
 import "./banner.css";
 
 const images = Object.values(timelineImages).flat();
@@ -51,8 +51,6 @@ const BannerInteraction = () => {
         <div
           ref={containerRef}
           className="banner-slider-container"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
         >
           <div
             className="banner-track"

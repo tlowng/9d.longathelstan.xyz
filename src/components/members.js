@@ -5,6 +5,12 @@ import './members.css';
 // Define the member data structure
 const membersData = [
   {
+    role: "GVCN",
+    people: [
+      { name: "Lê Hương", link: "https://www.facebook.com/le.huong.135154" }
+    ]
+  },
+  {
     role: "Lớp trưởng",
     people: [
       { name: "Quỳnh Nhi", link: "https://guns.lol/qnyih" }

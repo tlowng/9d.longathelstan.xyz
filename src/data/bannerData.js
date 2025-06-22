@@ -1,12 +1,16 @@
 // src/data/bannerData.js
 
 export const timelineImages = {
-  "Tháng 8/2024": [
-    "/timeline/8-2024/1.webp",
 
-  ],
   "Tháng 9/2024": [
-
+    "/timeline/9-2024/2.webp",
+    "/timeline/9-2024/3.webp",
+    "/timeline/9-2024/4.webp",
+    "/timeline/9-2024/5.webp",
+    "/timeline/9-2024/6.webp",
+    "/timeline/9-2024/7.webp",
+    "/timeline/9-2024/8.webp",
+    "/timeline/9-2024/1.webp",
   ],
   "Tháng 10/2024": [],
   "Tháng 11/2024": [],
