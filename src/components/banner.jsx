@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { timelineImages } from "../data/bannerData";
-import TimelinePopup from "./TimelinePopup"; 
+import TimelinePopup from "./TimelinePopup";  
 import "./banner.css";
 
 const images = Object.values(timelineImages).flat();
