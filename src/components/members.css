@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: row;
   gap: var(--dl-space-space-twounits); /* Added gap here for horizontal spacing */
+  align-items: flex-start; /* Align columns to start */
 }
 
 .members-container13 {
@@ -50,11 +51,61 @@
   margin-bottom: var(--dl-space-space-unit); /* Space between role groups */
 }
 
+/* Desktop-specific: Ensure GVCN and Lớp trưởng are side by side */
+@media(min-width: 768px) {
+  .members-container12 {
+    display: flex;
+    flex-direction: row;
+    gap: var(--dl-space-space-twounits);
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .members-container13 {
+    flex: 1;
+    min-width: 280px; /* Ensure consistent width for each column */
+    max-width: 350px;
+  }
+  
+  .members-container-group {
+    width: 100%;
+  }
+  
+  /* Force the container that holds GVCN and Lớp trưởng to be horizontal */
+  .members-groups-wrapper .members-container12 {
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  /* Make sure each group column takes equal space */
+  .members-container13:nth-child(1),
+  .members-container13:nth-child(2) {
+    flex: 1;
+    min-width: 280px;
+    max-width: none;
+  }
+  
+  /* More specific selectors to override any conflicting styles */
+  .membersroot-class-name .members-container11 .members-groups-wrapper .members-container12 {
+    flex-direction: row !important;
+    display: flex !important;
+    gap: var(--dl-space-space-twounits) !important;
+  }
+  
+  .membersroot-class-name .members-container11 .members-groups-wrapper .members-container12 .members-container13 {
+    flex: 1 !important;
+    min-width: 280px !important;
+  }
+}
+
 /* Style for the role text */
 .members-role-text {
   fill: #ff7872;
   color: #ff7872;
   display: inline-block;
+  font-weight: 600; /* Make role text bolder */
+  margin-bottom: var(--dl-space-space-halfunit); /* Add space below role text */
 }
 
 /* Wrapper to center the entire block of groups */
@@ -65,8 +116,8 @@
     display: flex;
     flex-direction: column; /* Stack the group elements vertically */
     align-items: flex-start; /* Align the group elements to the left */
+    padding: 0 var(--dl-space-space-unit); /* Add horizontal padding */
 }
-
 
 /* New styles for individual member items (the clickable link area) */
 .member-item-link { /* Apply styles to the anchor tag */
@@ -127,47 +178,84 @@
 @media(max-width: 767px) {
   .members-container11 {
     width: 100%;
-     align-items: flex-start;
+    align-items: center; /* Center align on tablet */
   }
   .membersroot-class-name {
     width: 100%;
   }
-   .members-groups-wrapper {
-     align-items: center; /* Center content inside wrapper on medium screens */
-   }
-    .members-groups-wrapper .members-container12 {
-        justify-content: center; /* Center horizontal row on medium screens */
-    }
+  .members-groups-wrapper {
+    align-items: center; /* Center content inside wrapper on medium screens */
+    padding: 0 var(--dl-space-space-oneandhalfunits); /* Increase padding on tablet */
+  }
+  .members-groups-wrapper .members-container12 {
+    justify-content: center; /* Center horizontal row on medium screens */
+  }
+  .members-container-group {
+    align-items: center; /* Center align group content on tablet */
+    width: 100%;
+  }
+  .member-item {
+    width: 100%;
+    max-width: 400px; /* Limit max width on tablet */
+  }
 }
 
 @media(max-width: 479px) {
   .members-container12 {
-    width: 285px;
-    align-items: flex-start;
+    width: 100%; /* Use full width instead of fixed 285px */
+    align-items: center; /* Center align items */
     flex-direction: column; /* Stack Quàng Tử and Công Túa vertically */
     justify-content: flex-start;
-    gap: 0; /* Remove horizontal gap when stacked vertically */
+    gap: var(--dl-space-space-unit); /* Add gap between stacked groups */
   }
   .members-container13 {
-    width: 285px;
+    width: 100%; /* Use full width instead of fixed 285px */
     margin-right: 0px; /* Ensure no horizontal margin when stacked */
   }
-   .members-container-group {
-     align-items: flex-start; /* Align text to start within the group */
-   }
+  .members-container-group {
+    align-items: center; /* Center align group content on mobile */
+    width: 100%;
+    margin-bottom: 10px; /* Increase spacing between groups */
+  }
+  .members-role-text {
+    width: 100%;
+    font-size: 1.1em; /* Slightly larger text on mobile */
+    margin-left: 5px;
+    margin-bottom: 5px; /* More space below role text */
+  }
   /* Apply width adjustment to the new member-item class */
   .member-item {
     width: 100%;
+    max-width: none; /* Remove max-width constraint on mobile */
+    min-height: 65px; /* Slightly taller for better touch targets */
+    padding: var(--dl-space-space-unit) var(--dl-space-space-oneandhalfunits); /* Better padding */
   }
   .members-container23 {
-    width: 285px;
+    width: 100%; /* Use full width instead of fixed 285px */
     flex-direction: column;
   }
   .members-container24 {
     width: 100%;
     margin-right: 0px;
   }
-   .members-groups-wrapper {
-     align-items: center; /* Center content inside wrapper on small screens */
-   }
+  .members-groups-wrapper {
+    align-items: center; /* Center content inside wrapper on small screens */
+    padding: 0 var(--dl-space-space-unit); /* Consistent padding */
+    width: 100%;
+  }
+  
+  /* Additional mobile optimizations */
+  .member-name {
+    font-size: 0.95em; /* Slightly smaller text for better fit */
+    margin-left: var(--dl-space-space-unit); /* More space from icon */
+  }
+  
+  .member-content {
+    flex: 1; /* Allow content to take available space */
+  }
+  
+  /* Improve touch targets */
+  .member-item-link {
+    width: 100%;
+  }
 }

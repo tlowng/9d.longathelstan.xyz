@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import './members.css';
 
-// Define the member data structure
 const membersData = [
   {
     role: "GVCN",
@@ -30,7 +29,7 @@ const membersData = [
       { name: "Quốc Khánh", link: "https://www.facebook.com/profile.php?id=100094393785792" },
       { name: "Thăng Long", link: "https://longathelstan.xyz/" },
       { name: "Tống Bảo", link: "https://www.facebook.com/profile.php?id=100033463548041" },
-      { name: "Tuấn Dũng", link: "https://www.instagram.com/d_k2125.nb/" }, // Note: This link might be incorrect based on original code pattern
+      { name: "Tuấn Dũng", link: "https://www.instagram.com/d_k2125.nb/" },
       { name: "Tuấn Việt", link: "https://www.facebook.com/profile.php?id=61554240063186" },
       { name: "Việt Anh", link: "https://www.facebook.com/profile.php?id=100087801795292" },
       { name: "Vũ Nguyên", link: "https://www.facebook.com/profile.php?id=100083706210940" }
@@ -41,7 +40,7 @@ const membersData = [
       const lastNameA = nameA[nameA.length - 1];
       const lastNameB = nameB[nameB.length - 1];
 
-      const lastNameCompare = lastNameA.localeCompare(lastNameB, 'vi'); // Use localeCompare with 'vi' for Vietnamese sorting
+      const lastNameCompare = lastNameA.localeCompare(lastNameB, 'vi');
       if (lastNameCompare !== 0) {
         return lastNameCompare;
       }
@@ -74,65 +73,25 @@ const membersData = [
 ];
 
 const Members = (props) => {
-  // Filter out the specific groups for horizontal layout
-  const specialGroups = membersData.filter(group => group.role === "Quàng Tử" || group.role === "Công Túa");
-  const otherGroups = membersData.filter(group => group.role !== "Quàng Tử" && group.role !== "Công Túa");
+  // Filter groups for different layouts
+  const horizontalGroups = membersData.filter(group => 
+    group.role === "GVCN" || group.role === "Lớp trưởng"
+  );
+  const studentGroups = membersData.filter(group => 
+    group.role === "Quàng Tử" || group.role === "Công Túa"
+  );
 
   return (
     <div className={`members-container10 ${props.rootClassName} `}>
       <div className="members-container11">
-        {/* New wrapper to center the groups block */}
         <div className="members-groups-wrapper">
-          {/* Render other groups vertically */}
-          {otherGroups.map((group, index) => (
-            <div className="members-container-group" key={index}> {/* Container for each group */}
-              <span className="members-role-text"> {/* Span for the role text */}
-                {group.role}
-              </span>
-              {group.people.map((member, memberIndex) => (
-                <a
-                  href={member.link}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="member-item-link"
-                  key={memberIndex}
-                >
-                  <div className="member-item"> {/* Updated class name */}
-                    <div className="member-content"> {/* Updated class name */}
-                      {/* Assuming an avatar might go here */}
-                      <span className="member-name">
-                        {member.name}
-                      </span>
-                    </div>
-                    {/* SVG Icon */}
-                    <svg
-                      width="22"
-                      height="22"
-                      viewBox="0 0 24 24"
-                      className="member-icon"
-                    >
-                      <path
-                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-              ))}
-            </div>
-          ))}
-
-          {/* Render special groups horizontally */}
-          {specialGroups.length > 0 && (
-            <div className="members-container12"> {/* Horizontal container */}
-              {specialGroups.map((group, index) => (
-                <div className="members-container13" key={index}> {/* Vertical column for each special group */}
-                  <div className="members-container-group"> {/* Container for role and people list */}
-                     <span className="members-role-text"> {/* Span for the role text */}
+          
+          {horizontalGroups.length > 0 && (
+            <div className="members-container12">
+              {horizontalGroups.map((group, index) => (
+                <div className="members-container13" key={index}>
+                  <div className="members-container-group">
+                    <span className="members-role-text">
                       {group.role}
                     </span>
                     {group.people.map((member, memberIndex) => (
@@ -145,12 +104,10 @@ const Members = (props) => {
                       >
                         <div className="member-item">
                           <div className="member-content">
-                            {/* Assuming an avatar might go here */}
                             <span className="member-name">
                               {member.name}
                             </span>
                           </div>
-                          {/* SVG Icon */}
                           <svg
                             width="22"
                             height="22"
@@ -161,9 +118,55 @@ const Members = (props) => {
                               d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"
                               fill="none"
                               stroke="currentColor"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {studentGroups.length > 0 && (
+            <div className="members-container12">
+              {studentGroups.map((group, index) => (
+                <div className="members-container13" key={index}>
+                  <div className="members-container-group">
+                    <span className="members-role-text">
+                      {group.role}
+                    </span>
+                    {group.people.map((member, memberIndex) => (
+                      <a
+                        href={member.link}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="member-item-link"
+                        key={memberIndex}
+                      >
+                        <div className="member-item">
+                          <div className="member-content">
+                            <span className="member-name">
+                              {member.name}
+                            </span>
+                          </div>
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 24 24"
+                            className="member-icon"
+                          >
+                            <path
+                              d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             ></path>
                           </svg>
                         </div>
