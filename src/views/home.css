@@ -352,7 +352,7 @@
   border-color: #D43441;
   border-style: solid;
   border-width: 2px;
-  border-radius: var(--dl-radius-radius-radius8);
+  border-radius: 12px;
   justify-content: space-between;
   text-decoration: none;
 }
@@ -398,7 +398,7 @@
   border-color: #D43441;
   border-style: solid;
   border-width: 2px;
-  border-radius: var(--dl-radius-radius-radius8);
+  border-radius: 12px;
   justify-content: space-between;
   text-decoration: none;
 }

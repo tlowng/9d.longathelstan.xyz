@@ -130,22 +130,25 @@
   height: 60px;
   display: flex;
   padding: var(--dl-space-space-oneandhalfunits);
-  transition: 0.3s;
+  transition: 0.2s;
   align-items: center;
   border-color: #D43441;
   border-style: solid;
   border-width: 2px;
-  border-radius: var(--dl-radius-radius-radius8);
+  border-radius: 12px;
   justify-content: space-between;
   margin-top: var(--dl-space-space-halfunit); /* Space between member items within a group */
 }
 
 .member-item:hover {
   background-color: #FFA5A1;
+  transform: translateY(-4px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .member-item:active {
-  margin-top: calc(var(--dl-space-space-halfunit) + var(--dl-space-space-halfunit)); /* Adjust margin on active */
+   transform: translateY(0);
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .member-content { /* Container for name and icon within the member item */

@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types';
 import './members.css';
 
@@ -154,21 +155,12 @@ const Members = (props) => {
                               {member.name}
                             </span>
                           </div>
-                          <svg
-                            width="22"
-                            height="22"
-                            viewBox="0 0 24 24"
-                            className="member-icon"
-                          >
-                            <path
-                              d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6m4-3h6v6m-11 5L21 3"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            ></path>
+
+                          <svg  viewBox="0 0 24 24"  className='member-icon' width={22} height={22} >
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
                           </svg>
+
+
                         </div>
                       </a>
                     ))}
